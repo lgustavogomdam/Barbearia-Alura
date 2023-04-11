@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "reset.css">
+    <link rel = "stylesheet" href = "style_produtos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Prosto+One&display=swap" rel="stylesheet">
+    <title>Formulário - Barbearia Alura</title>
+</head>
+
+<body>
+    <header>
+        <div class = "div_cabecalho">
+            <h1>
+                <img style = "width: 100px" class = "imgHeader" src = "337.jpg" alt="Logo da Barbearia Alura">
+                <nav>
+                    <ul id = "listaPages">
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "produtos.html">Products</a></li>
+                        <li><a href = "formulario.html">Contact</a>
+                    </ul>
+                </nav>
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia da Semana</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Segunda-Feira</td>
+                    <td>08:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Terça-Feira</td>
+                    <td>08:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Quarta-Feira</td>
+                    <td>08:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Quinta-Feira</td>
+                    <td>08:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Sexta-Feira</td>
+                    <td>08:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>08:00 - 12:00</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <form>
+            <fieldset>
+
+                <label for = "nome">Nome</label>
+                <input type="text" id = "nome" class="input-padrao" required placeholder="Seu nome completo">
+                
+                <label for = "email">Email</label>
+                <input type = "email" id = "email" class="input-padrao" required placeholder="email@endereço_de_email">
+                
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                
+                <textarea class="input-padrao" required placeholder="Envie-nos uma mensagem!"></textarea>
+
+            </fieldset>
+                
+            <fieldset>
+                <legend>Como gostaria de ser contactado?</legend>
+                
+                <label for="radio-ligação"><input type="radio" value="ligação" name="contato" id="radio-ligação">Ligação</label>
+                
+                <label for="radio-whatsapp"><input type="radio" value="whatsapp" name="contato" id="radio-whatsapp" checked>WhatsApp</label>
+                
+                <label for="radio-email"><input type="radio" value="email" name="contato" id="radio-email">Email</label>
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend>Qual melhor horário para cortar seu cabelo?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox">Gostaria de receber atualizações por E-mail?<input type="checkbox" value="atualizações" checked></label>
+    
+            <input type="submit" value ="Enviar Formulário" class="bottomenviar">
+            
+        </form>
+        
+        
+    </main>
+
+    <footer>
+        <img src = "337.jpg" alt="Logo da Barbearia Alura">
+        <p id = "copyright">
+            &copy; Copiright Barbearia Alura - 2022
+        </p>
+    </footer>
+</body>
+
+</html>
